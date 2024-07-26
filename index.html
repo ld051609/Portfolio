@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Lani Dinh's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Additional CSS for Skills Slider */
+        .skills-slider {
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 5px; /* Optional border radius */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .skill {
+            display: inline-block;
+            min-width: 200px;
+            margin: 0 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 0 0 auto; /* Prevent items from shrinking */
+        }
+
+        .skills-slider::-webkit-scrollbar {
+            display: none; 
+        }
+
+        .tech-title {
+            font-weight: bolder;
+            margin: 20px 0;
+        }
+
+        /* Contact Icons */
+        .labeled-icons {
+            list-style: none;
+            padding: 0;
+        }
+
+        .labeled-icons li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .labeled-icons .icon {
+            font-size: 1.5em;
+            margin-right: 15px; /* Adjust gap size */
+        }
+
+        .labeled-icons a {
+            color: inherit;
+            text-decoration: none;
+            padding-left: 15px; /* Optional: Add padding to create space */
+        }
+
+        .labeled-icons .fa-github {
+            color: #333;
+        }
+
+        .labeled-icons .label {
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="is-preload">
+
+<!-- Header -->
+<header id="header">
+    <div class="inner">
+        <a href="#" class="image avatar"><img src="images/avatar-main.jpg" alt="Lani Dinh's Avatar" /></a>
+        <h1><strong>Aloha</strong>, I'm Lani Dinh - a software engineering student @ University of Guelph</h1>
+    </div>
+</header>
+
+<!-- Main -->
+<div id="main">
+
+    <!-- About Me Section -->
+    <section id="one">
+        <header class="major">
+            <h2>A Little Bit About Me!!</h2>
+        </header>
+        <p>I am a dedicated software engineering student with a deep passion for using technology to solve complex problems creatively. My journey in tech is driven by curiosity and the desire to innovate.</p>
+        <p>Outside of coding, I'm an avid boba lover, always on the lookout for new flavors and enjoying diverse cuisines. This blend of technical skills and culinary interests keeps me inspired and motivated.</p>
+        <p><span style="font-weight: bold">If we match, let's connect and even collaborate on creating projects together!!</span></p>
+        <ul class="actions">
+            <li><a href="#" class="button">Connect With Me</a></li>
+        </ul>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="two">
+        <h1>Technical Skills</h1>
+
+        <!-- Programming Languages Slider -->
+        <h3 class="tech-title">1 - Programming Languages</h3>
+        <div class="skills-slider">
+            <div class="skill">Java</div>
+            <div class="skill">C</div>
+            <div class="skill">Python</div>
+            <div class="skill">HTML/CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">SQL</div>
+        </div>
+
+        <!-- Frameworks Slider -->
+        <h3 class="tech-title">2 - Frameworks</h3>
+        <div class="skills-slider">
+            <div class="skill">Spring Boot</div>
+            <div class="skill">React</div>
+            <div class="skill">NextJS</div>
+            <div class="skill">NodeJS</div>
+            <div class="skill">ExpressJS</div>
+            <div class="skill">Flask</div>
+        </div>
+
+        <!-- Database Technologies Slider -->
+        <h3 class="tech-title">3 - Database Technologies</h3>
+        <div class="skills-slider">
+            <div class="skill">MySQL</div>
+            <div class="skill">PostgreSQL</div>
+            <div class="skill">MongoDB</div>
+        </div>
+
+        <!-- Development Tools Slider -->
+        <h3 class="tech-title">4 - Development Tools</h3>
+        <div class="skills-slider">
+            <div class="skills-track">
+                <div class="skill">Visual Studio Code</div>
+                <div class="skill">IntelliJ IDEA Edu</div>
+                <div class="skill">Git</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Projects Section -->
+    <section id="three">
+        <h1>Recent Projects</h1>
+        <div class="row">
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="Project Thumbnail" /></a>
+                <h3>Magna sed consequat tempus</h3>
+                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+            </article>
+            <!-- Additional projects can be added here -->
+        </div>
+        <ul class="actions">
+            <li><a href="#" class="button">Check Out!</a></li>
+        </ul>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section id="four">
+        <h1>Get In Touch</h1>
+        <p>Feel free to reach out to me using the contact form or the contact details below.</p>
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-8 col-12-small">
+                <form method="post" action="#">
+                    <div class="row gtr-uniform gtr-50">
+                        <div class="col-6 col-12-xsmall">
+                            <input type="text" name="name" id="name" placeholder="Name" required />
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <input type="email" name="email" id="email" placeholder="Email" required />
+                        </div>
+                        <div class="col-12">
+                            <textarea name="message" id="message" placeholder="Message" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" class="button primary" /></li>
+                    </ul>
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="col-4 col-12-small">
+                <ul class="labeled-icons">
+                    <li>
+                        <i class="fas fa-mobile-alt icon"></i>
+                        647-765-3730
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope icon"></i>
+                        <a href="mailto:landinhhoang0509@gmail.com">landinhhoang0509@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-github icon"></i>
+                        <a href="https://github.com/ld051609" target="_blank">github.com/ld051609</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
