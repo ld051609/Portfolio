@@ -69,6 +69,14 @@
         .labeled-icons .label {
             font-weight: bold;
         }
+		.icon-container {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			gap: 10px;
+			margin: 10px 10px;
+			text-decoration: none;
+		}
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -179,27 +187,25 @@
                         </div>
                     </div>
                     <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="button primary" /></li>
+                        <li><input type="submit" value="Send Message" class="button primary" style="margin-top: 20px;"/></li>
                     </ul>
                 </form>
             </div>
 
             <!-- Contact Details -->
             <div class="col-4 col-12-small">
-                <ul class="labeled-icons">
-                    <li>
-                        <i class="fas fa-mobile-alt icon"></i>
-                        647-765-3730
+                    <li class="icon-container">
+						<i class="fa-solid fa-phone"></i>
+						(+1) 647-765-3730
                     </li>
-                    <li>
+                    <li class="icon-container">
                         <i class="fas fa-envelope icon"></i>
                         <a href="mailto:landinhhoang0509@gmail.com">landinhhoang0509@gmail.com</a>
                     </li>
-                    <li>
-                        <i class="fab fa-github icon"></i>
-                        <a href="https://github.com/ld051609" target="_blank">github.com/ld051609</a>
+                    <li class="icon-container">
+						<i class="fa-brands fa-github"></i>
+						<a href="https://github.com/ld051609" target="_blank">github.com/ld051609</a>
                     </li>
-                </ul>
             </div>
         </div>
     </section>
