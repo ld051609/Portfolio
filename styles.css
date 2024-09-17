@@ -84,7 +84,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
     body {
         flex-direction: column; /* Stack sidebar and main content vertically */
     }
@@ -94,6 +94,7 @@ body {
         height: auto; /* Adjust height to fit content */
         margin-bottom: 20px;
         flex: 1 1 auto; /* Allow to flex and take available space */
+        align-items: center;
     }
     .main {
         margin-left: 0; /* Remove left margin */
