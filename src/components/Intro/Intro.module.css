@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-around;
     height: 100vh;
-    font-family: monospace;
+    --cursor-color: black; /* Custom property for cursor color */
 }
 
 /* Blinking Cursor Keyframes */
@@ -31,9 +31,12 @@
     animation: fadeIn 1s ease-out forwards; /* Smooth fade-in animation */
     opacity: 0;
 }
+
+/* Name with Blinking Cursor */
 .name {
+    display: inline-block; /* Allows cursor to follow the text */
     border-right: 2px solid var(--cursor-color); /* Cursor */
-    animation: blink 0.9s steps(1) infinite; /* Blink after fadeIn */
+    animation: blink 0.9s steps(1) infinite; /* Blinking cursor */
     font-family: 'Courier New', Courier, monospace;
     font-size: 52px; /* Larger font size for prominence */
     font-weight: bold;
@@ -41,19 +44,11 @@
     color: #2d3142; /* Darker neutral color for text */
     margin: 15px 0; /* Increased vertical margin for spacing */
     opacity: 0; /* Start hidden */
+    animation: fadeIn 1s ease-out forwards, blink 0.9s steps(1) infinite 1.5s; /* Fade in and start blinking after fade-in */
 }
 
-/* Ensure the fadeIn keyframe is defined correctly */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* Rest of your CSS remains unchanged */
+
 
 
 /* Description Text */
@@ -115,6 +110,17 @@
     background-color: #ccc; /* Darker background on hover */
 }
 
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Button Styling */
 .btn_container {
@@ -214,6 +220,6 @@
     height: auto; /* Maintain aspect ratio */
     margin: 10px; /* Space between images */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 8px; /* Rounded corners for images */
 }
-
 
