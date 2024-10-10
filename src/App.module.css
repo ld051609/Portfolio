@@ -1,0 +1,219 @@
+/* General Container Styling */
+.container {
+    background-color: #f5f5f5; /* Soft neutral background */
+    color: #333; /* Dark text for contrast */
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    font-family: monospace;
+}
+
+/* Blinking Cursor Keyframes */
+@keyframes blink {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--cursor-color);
+    }
+}
+
+/* Code-like Text */
+.codeWord {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px; /* Increased font size for visibility */
+    color: #4a4a4a; /* Dark gray for a softer look */
+    margin-bottom: 10px; /* Increased margin for spacing */
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-out forwards; /* Smooth fade-in animation */
+    opacity: 0;
+}
+
+/* Name with Blinking Cursor */
+.name {
+    border-right: 2px solid var(--cursor-color); /* Cursor */
+    animation: blink 0.9s steps(1) infinite, fadeIn 1.5s ease-out forwards; /* Blinking cursor with smooth fade-in */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 52px; /* Larger font size for prominence */
+    font-weight: bold;
+    white-space: nowrap;
+    color: #2d3142; /* Darker neutral color for text */
+    margin: 15px 0; /* Increased vertical margin for spacing */
+    opacity: 0;
+}
+
+/* Description Text */
+.description {
+    font-family: 'Inter', sans-serif; /* Cohesive font */
+    font-size: 18px; /* Font size for description */
+    line-height: 1.6; /* Improved line height for readability */
+    margin: 10px 0; /* Vertical margin for spacing */
+    color: #666; /* Lighter color for contrast with the name */
+    text-align: center; /* Center text alignment */
+    animation: fadeIn 2s ease-out; /* Consistent fade-in for descriptions */
+}
+
+/* Image Styling */
+.workImg {
+    width: 25%; /* Set width for images */
+    height: auto; /* Maintain aspect ratio */
+
+    margin: 10px; /* Space between images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    opacity: 0; /* Start hidden */
+    animation: slideIn 0.5s forwards; /* Slide in effect */
+}
+
+/* Image Slide-in Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px); /* Start below */
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+
+
+/* Qualities Container */
+.qualities {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    justify-content: center; /* Center the items */
+    margin-top: 20px; /* Space above the qualities */
+    color: #2d3142; /* Darker neutral color for text */
+}
+
+/* Individual Quality Item */
+.quality {
+    background-color: #e7e7e7; /* Light gray background for each quality */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for spacing */
+    margin: 5px; /* Margin between items */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.quality:hover {
+    background-color: #ccc; /* Darker background on hover */
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Styling */
+.btn_container {
+    display: flex; /* Flexbox for alignment */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Space above buttons */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Style */
+.button {
+    background-color: #0077b6; /* Main button color */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Increased padding for larger click area */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 18px; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 119, 182, 0.3); /* Shadow for depth */
+}
+
+/* Hover Effect */
+.button:hover {
+    background-color: #005f8a; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 119, 182, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Active Effect */
+.button:active {
+    transform: translateY(0); /* Reset lift effect when active */
+    box-shadow: 0 2px 5px rgba(0, 119, 182, 0.2); /* Shadow reduces when active */
+}
+
+/* Subtle Container Styling */
+.container_one {
+    text-align: center;
+    animation: fadeIn 2s ease-out; /* Fade-in for main container */
+}
+
+/* Button Container Styling */
+.btn_container {
+    margin-top: 30px; /* Increased margin for better spacing */
+}
+
+/* Container for social buttons */
+.container_two {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Vertical alignment */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center items */
+    margin-right: 40px; /* Space from the left */
+}
+
+/* Social Button Styling */
+.socialContainer {
+    display: flex; /* Flexbox to align buttons */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 20px; /* Spacing between buttons */
+}
+
+/* Social Button Styling */
+.socialButton {
+    display: flex; /* Flexbox for centering icon */
+    justify-content: center; /* Center icon */
+    align-items: center; /* Center icon */
+    width: 80px; /* Width of the button (increase if needed) */
+    height: 80px; /* Height of the button (increase if needed) */
+    border-radius: 50%; /* Circular shape */
+    background-color: #f5f5f5; /* Background color */
+    color: #333; /* Icon color */
+    font-size: 36px; /* Increase font size for larger icons */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.socialButton:hover {
+    background-color: #0077b6; /* Change background on hover */
+    color: white; /* Change icon color on hover */
+}
+
+/* FontAwesome Icon Styling */
+.socialButton .fa {
+    width: 100%; /* Make icon fill the button width */
+    height: 100%; /* Make icon fill the button height */
+    text-align: center; /* Center the icon in the button */
+}
+
+
+
+/* Image Styling */
+.workImg {
+    width: 20%; /* Use full width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Space between images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
