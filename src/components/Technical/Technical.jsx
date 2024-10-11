@@ -11,7 +11,7 @@ const Technical = () => {
   const displayText = useTypewriter(`W hat skills do I have?`);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.bigContainer}>
       <p className={styles.subtitle}>{displayText}</p>
       <h1 className={styles.title}>Technical Skills</h1>
       <div className={styles.subContainer}>
