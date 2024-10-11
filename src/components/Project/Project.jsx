@@ -53,7 +53,7 @@ const Project = () => {
       description: '🔍 An app that transforms your cherished memory photos into engaging and meaningful puzzle games.',
       tech: 'Expo, React Native, Firebase, Firestore',
       link: "https://github.com/ld051609/MemoryCraft",
-      images: [mouseImage], // Add images for Mind Tracker
+      images: [puzzleImage], // Add images for Mind Tracker
     }
     
   ];

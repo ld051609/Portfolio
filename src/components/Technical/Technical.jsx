@@ -8,7 +8,7 @@ import { GoDatabase } from "react-icons/go";
 import { FaBook } from "react-icons/fa";
 
 const Technical = () => {
-  const displayText = useTypewriter(`W hat skills do I have?`);
+  const displayText = useTypewriter(`w hat skills do i have?`);
 
   return (
     <div className={styles.bigContainer}>
