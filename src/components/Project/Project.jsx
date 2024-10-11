@@ -4,6 +4,9 @@ import useTypewriter from '../../useTypewriter';
 import flowerImage from '../../assets/flower.png';
 import droplessImage from '../../assets/dropless.png';
 import pantryImage from '../../assets/pantry.png';
+import puzzleImage from '../../assets/puzzle_2.png';
+import chatbotImage from '../../assets/chatbot.png';
+import mouseImage from '../../assets/mouse.png';
 const Project = () => {
   const displayText = useTypewriter(`What projects have I worked on?`);
   const displayText2 = `view my`;
@@ -22,35 +25,35 @@ const Project = () => {
       description: '🔍 A dashboard addressing water scarcity with an interactive map for global renewable resources predictions, an emergency chatbot to find nearby freshwater, and a summary board that monitors and alerts based on weather and water resource data.',
       tech: 'React, Google APIs, OpenAI API, Machine Learning, Flask',
       link: "https://github.com/ld051609/Dropless",
-      images: [droplessImage, droplessImage], // Add images for Mind Tracker
+      images: [droplessImage], // Add images for Mind Tracker
     },
     {
       title: '📋 Pantry Tracker',
       description: '🔍 A website for managing pantry inventory, allowing users to add and track food items and get notifications for low supplies.',
       tech: 'Next.js, Material-UI, Firebase, Firestore',
       link: "https://github.com/ld051609/PantryTracker",
-      images: [pantryImage, pantryImage], // Add images for Mind Tracker
+      images: [pantryImage], // Add images for Mind Tracker
     },
     {
       title: '🖱️ Mousetrack',
       description: '🔍 Leverages computer vision to control mouse movements with hand gestures, offering a seamless and hands-free interaction experience.',
       tech: 'Python, Mediapipe, OpenCV, PyAutoGUI',
       link: "https://github.com/ld051609/Mousetrack",
-      images: [droplessImage, droplessImage], // Add images for Mind Tracker
+      images: [droplessImage], // Add images for Mind Tracker
     },
     {
       title: '📄 Docuquery',
       description: '🔍 The RAG chatbot will help users find information, generate responses, and assist with specific queries by leveraging a retrieval system and a generative model.',
       tech: 'React, Firebase, Langchain, RAG',
       link: "https://github.com/ld051609/DocuQuery",
-      images: [droplessImage, droplessImage], // Add images for Mind Tracker
+      images: [chatbotImage], // Add images for Mind Tracker
     },
     {
       title: '🧩 MemoryCraft',
       description: '🔍 An app that transforms your cherished memory photos into engaging and meaningful puzzle games.',
       tech: 'Expo, React Native, Firebase, Firestore',
       link: "https://github.com/ld051609/MemoryCraft",
-      images: [droplessImage, droplessImage], // Add images for Mind Tracker
+      images: [mouseImage], // Add images for Mind Tracker
     }
     
   ];
