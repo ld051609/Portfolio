@@ -18,7 +18,7 @@ const Project = () => {
       description: '🔍 An app that enables users to take a photo of a plant, utilizes a Tensorflow fine-tuned model to identify the plant, and then saves it to their personal collection.',
       tech: 'React Native, Expo, Tensorflow, Flask, Firestore (Cloud Storage), Firebase Auth',
       link: "https://github.com/ld051609/FloraClick",
-      images: [flowerImage, flowerImage], // Add images for Flora Click
+      images: [flowerImage], // Add images for Flora Click
     },
     {
       title: '💦  Dropless',
@@ -39,7 +39,7 @@ const Project = () => {
       description: '🔍 Leverages computer vision to control mouse movements with hand gestures, offering a seamless and hands-free interaction experience.',
       tech: 'Python, Mediapipe, OpenCV, PyAutoGUI',
       link: "https://github.com/ld051609/Mousetrack",
-      images: [droplessImage], // Add images for Mind Tracker
+      images: [mouseImage], // Add images for Mind Tracker
     },
     {
       title: '📄 Docuquery',
