@@ -1,0 +1,176 @@
+/* General Container Styling */
+.container {
+    color: #333; /* Dark text for readability */
+    padding: 30px; /* Comfortable spacing */
+    border-radius: 8px; /* Soft corners */
+    font-family: 'Inter', sans-serif; /* Cohesive font */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Title Styling */
+.subtitle {
+    font-size: 22px; /* Large font size for title */
+    margin-bottom: 20px; /* Space below the title */
+    opacity: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+}
+.title{
+    font-size: 40px; /* Large font size for title */
+    margin-bottom: 50px; /* Space below the title */
+    letter-spacing: 5px;
+}
+/* Section Styling */
+.section {
+    margin-bottom: 20px; /* Space between sections */
+    padding: 20px; /* Internal padding for each section */
+    border-radius: 20px; /* Slightly rounded corners */
+    background-color: white; /* Light grey background for sections */
+
+}
+
+/* Section Title Styling */
+.sectionTitle {
+    font-size: 18px; /* Medium font size */
+    background-color: white;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+
+}
+
+/* Carousel Container */
+.carousel {
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    max-width: 500px;
+    background-color: white;
+    
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Carousel Items Styling */
+.carouselItems {
+    background-color: white;
+    display: inline-flex; /* Display items inline */
+    padding: 30px 10px;
+}
+
+/* List Item Styling */
+.listItem {
+    display: inline-block; /* Ensure items are displayed inline */
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    width: 150px; /* Fixed width for each item */
+    font-size: 12px; /* Standard font size */
+    padding: 10px; /* Space inside each item */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 20px; /* Space between items */
+    text-align: center; /* Center text */
+    
+
+}
+.listItem:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+/* Sub Container */
+.subContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px
+}
+
+.image {
+    width: 50%;
+    height: auto;
+}
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+/* Learning Container Styling */
+.learningContainer {
+    background: linear-gradient(135deg, #e3fdfd, #ffe6fa); /* Softer gradient background */
+    border-radius: 25px; /* Softer, more rounded corners */
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.05); /* Lighter, softer shadow */
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px;
+    min-width: 100px;
+}
+
+.learningIcon{
+    color: #333;
+}
+
+/* Title Styling */
+.titleLearning {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #444;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    background-color: transparent;
+}
+
+/* Tech List Styling */
+.techList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.techLearning {
+    font-size: 16px;
+    padding: 12px 20px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for a softer look */
+    margin: 15px auto; /* Space between items */
+    border-radius: 50px; /* Softer pill shape for items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: fit-content;
+    display: inline-block; /* To avoid full-width look */
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer; /* Pointer for interaction hint */
+    display: flex;
+    flex-direction: column;
+   
+}
+.techLearning:hover{
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+    /* chaning to pink color */
+    background-color: #dfb3c222;
+}
+
+/* Icon Container */
+.iconContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    background-color: transparent;
+    gap: 5px;
+}   
+.icon{
+    background-color: transparent;
+    
+}

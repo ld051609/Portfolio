@@ -1,6 +1,5 @@
 /* General Container Styling */
 .container {
-    background-color: #f5f5f5; /* Soft neutral background */
     color: #333; /* Dark text for contrast */
     padding: 40px;
     display: flex;

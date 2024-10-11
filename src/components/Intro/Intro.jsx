@@ -25,7 +25,7 @@ const App = () => {
             <div className={styles.container_one}>
                 <p className={styles.codeWord}>"Hello World"</p>
                 <h1 className={styles.name}>{displayText}</h1>
-                <p className={styles.description}>Software engineering student @ University of Guelph</p>
+                <p className={styles.description}>Software Engineering Student @ University of Guelph</p>
                 <p className={styles.description}>Driven by a passion for bringing solutions to life.</p>
 
                 <div className={styles.qualities}>
