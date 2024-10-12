@@ -4,12 +4,14 @@ import Technical from './components/Technical/Technical';
 import Project from './components/Project/Project';
 import './App.css'; // Import CSS for styling
 import { IoNavigateOutline } from "react-icons/io5";
+import Contact from './components/Contact/Contact';
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const introRef = useRef(null);
   const technicalRef = useRef(null);
   const projectRef = useRef(null);
+  const contactRef = useRef(null);
 
   const handleScrollToSection = (ref) => {
     window.scrollTo({
@@ -36,6 +38,9 @@ const App = () => {
             <button onClick={() => handleScrollToSection(projectRef)} className="nav-item">
               Project
             </button>
+            <button onClick={() => handleScrollToSection(contactRef)} className="nav-item">
+              Contact 
+            </button>
           </div>
         )}
       </div>
@@ -49,6 +54,9 @@ const App = () => {
         </section>
         <section ref={projectRef} style={{ marginBottom: '4rem', scrollMarginTop: '80px' }}>
           <Project />
+        </section>
+        <section ref={contactRef} style={{ marginBottom: '4rem', scrollMarginTop: '80px' }}>
+          <Contact />
         </section>
       </div>
     </div>

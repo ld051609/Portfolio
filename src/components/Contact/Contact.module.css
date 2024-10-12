@@ -1,0 +1,86 @@
+.container {
+  background-color: #3a3f47;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; /* Center the container */
+  max-width: 600px; /* Set a max width for better alignment */
+}
+
+.header {
+  color: white;
+  font-size: 30px;
+  text-align: center; /* Center the header text */
+  margin-bottom: 0.5rem; /* Reduced gap below header */
+  background-color: #3a3f47;
+  padding: 1rem;
+}
+
+.intro {
+  margin-bottom: 1rem; /* Reduced margin */
+  color: white;
+  text-align: center; /* Center align intro text */
+  background-color: #3a3f47;
+  margin: 0 40px;
+  margin-bottom: 20px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row; /* Change to column for better vertical stacking */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 1rem; /* Reduced margin below info container */
+  background-color: #3a3f47;
+  justify-content: space-around;
+  gap: 20px
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0; /* Reduced spacing between info items */
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+
+}
+
+.link {
+  text-decoration: none;
+  color:#3a3f47;
+  font-weight: bold;
+
+}
+
+.subheader {
+  text-align: center;
+  margin: 1rem 0; /* Reduced margin */
+  color: white;
+}
+
+.button:hover {
+  background-color: #3a3f47;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column; /* Use column layout */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  background-color: #3a3f47;
+}
+
+.imageContainer {
+  background-color: #3a3f47;
+  padding: 0;
+  display: flex; /* Use flex to center the image */
+  justify-content: center; /* Center the image */
+}
+
+.image {
+  background-color: #3a3f47;
+  width: 50%; /* Adjust size as needed */
+}
