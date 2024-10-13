@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './intro.module.css';
+import styles from './Intro.module.css';
 import useTypewriter from '../../useTypewriter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
